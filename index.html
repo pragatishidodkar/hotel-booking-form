@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hotel Booking Form</title>
+    <title>Luxury Hotel Booking</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b8b9c0e2b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<h2>Hotel Booking Form</h2>
+<div class="overlay">
+    <div class="booking-card">
+        <h2>Luxury Stay Booking</h2>
 
-<form id="bookingForm">
-    <label>Check-in Date:</label>
-    <input type="date" id="checkin" required>
+        <form id="bookingForm">
 
-    <label>Check-out Date:</label>
-    <input type="date" id="checkout" required>
+            <div class="input-box">
+                <i class="fa fa-calendar"></i>
+                <input type="date" id="checkin" required>
+            </div>
 
-    <label>Room Type:</label>
-    <select required>
-        <option value="">Select Room</option>
-        <option>Single</option>
-        <option>Double</option>
-        <option>Suite</option>
-    </select>
+            <div class="input-box">
+                <i class="fa fa-calendar"></i>
+                <input type="date" id="checkout" required>
+            </div>
 
-    <label>Number of Guests:</label>
-    <input type="number" min="1" required>
+            <div class="input-box">
+                <i class="fa fa-bed"></i>
+                <select required>
+                    <option value="">Select Room</option>
+                    <option>Single</option>
+                    <option>Double</option>
+                    <option>Suite</option>
+                    <option>Deluxe</option>
+                </select>
+            </div>
 
-    <label>Special Requests:</label>
-    <textarea></textarea>
+            <div class="input-box">
+                <i class="fa fa-users"></i>
+                <input type="number" min="1" placeholder="Number of Guests" required>
+            </div>
 
-    <button type="submit">Book Now</button>
-</form>
+            <div class="input-box">
+                <i class="fa fa-comment"></i>
+                <textarea placeholder="Special Requests"></textarea>
+            </div>
+
+            <button type="submit">Book Now</button>
+
+        </form>
+    </div>
+</div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
+
